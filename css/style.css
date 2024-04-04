@@ -138,3 +138,29 @@ footer {
   max-height: 400px;
   max-width: auto;
 }
+
+blockquote {
+  display: flex;
+  border: solid 1px black;
+  border-radius: 20px;
+  background-color: rgba(253, 191, 57, 0.575);
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+blockquote p {
+  margin-right: 50px;
+}
+blockquote img {
+  border-radius: 50%;
+}
+.author {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.author cite {
+  text-align: center;
+}
