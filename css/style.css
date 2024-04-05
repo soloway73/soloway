@@ -8,6 +8,9 @@ body {
 
   margin: 0;
 }
+body._lock {
+  overflow: hidden;
+}
 header {
   border-bottom: 1px solid;
 }
@@ -15,6 +18,7 @@ header {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
 }
 .whited {
   background-color: rgba(255, 255, 255, 0.589);
@@ -29,19 +33,8 @@ a {
 nav {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  /* color: red; */
 }
-/* ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 45px;
-    
-}
-ul li {
-    vertical-align: center;
-    width: 250px;
-} */
+
 .logo {
   margin-left: 20px;
 }
@@ -54,8 +47,6 @@ ul li {
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  /* grid-template-columns: repeat(auto-fit, 100px); */
-  /* margin: auto; */
   gap: 10px;
 }
 .links div {
@@ -84,7 +75,7 @@ p {
   margin-right: 100px;
 }
 .links a {
-  display: block;
+  padding: 20px;
 }
 .product-item {
   border: white solid 1px;
@@ -98,9 +89,6 @@ p {
   color: red;
 }
 footer {
-  /* position: absolute;
-    left: 0;
-    bottom: 0; */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.774);
   color: white;
@@ -109,10 +97,8 @@ footer {
   padding: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  display: flex;
 }
 #vk_groups {
-  margin-right: 50px;
 }
 .footer-contain {
   margin-left: 50px;
@@ -125,6 +111,10 @@ footer {
 .footer-contain div:not(:last-child) {
   margin-right: 20px;
 }
+.adress {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+}
 .adress p {
   text-align: right;
 }
@@ -136,9 +126,18 @@ footer {
   margin-right: auto;
   padding-bottom: 20px;
 }
-.map img {
-  max-height: 400px;
-  max-width: auto;
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.absoluted {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 blockquote {
@@ -261,5 +260,106 @@ blockquote img {
   }
   .slideshow-item-text p {
     font-size: 13px;
+  }
+}
+
+/* Адаптив */
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    top: 38px;
+    left: 30px;
+  }
+  .menu-icon::before,
+  .menu-icon::after,
+  .menu-icon span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+  }
+  .menu-icon::before {
+    top: 0;
+  }
+  .menu-icon::after {
+    bottom: 0;
+  }
+  .menu-icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu-icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu-icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu-icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .links {
+    position: fixed;
+    top: 0;
+    left: -130%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    overflow: auto;
+  }
+  .links._active {
+    left: 0;
+  }
+  .links div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .links a {
+    padding: 40px;
+  }
+  .logo {
+    z-index: 6;
+  }
+  .map {
+    flex-wrap: wrap;
+  }
+
+  .absoluted {
+    position: relative;
+    top: 0;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  #vk_groups {
+    display: none;
+  }
+  .adress {
+    width: 100%;
+  }
+  .adress p {
+    text-align: center;
   }
 }
