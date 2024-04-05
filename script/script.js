@@ -16,5 +16,6 @@ for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function () {
     menuBody.classList.remove("_active");
     iconMenu.classList.remove("_active");
+    document.body.classList.remove("_lock");
   });
 }
