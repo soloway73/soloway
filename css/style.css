@@ -363,3 +363,11 @@ blockquote img {
     text-align: center;
   }
 }
+@media (max-width: 400px) {
+  .phone a {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
