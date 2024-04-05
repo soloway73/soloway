@@ -342,4 +342,24 @@ blockquote img {
   .logo {
     z-index: 6;
   }
+  .map {
+    flex-wrap: wrap;
+  }
+
+  .absoluted {
+    position: relative;
+    top: 0;
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  #vk_groups {
+    display: none;
+  }
+  .adress {
+    width: 100%;
+  }
+  .adress p {
+    text-align: center;
+  }
 }
