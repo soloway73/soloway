@@ -8,6 +8,9 @@ body {
 
   margin: 0;
 }
+body._lock {
+  overflow: hidden;
+}
 header {
   border-bottom: 1px solid;
 }
@@ -15,6 +18,7 @@ header {
   max-width: 1320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
 }
 .whited {
   background-color: rgba(255, 255, 255, 0.589);
@@ -71,7 +75,7 @@ p {
   margin-right: 100px;
 }
 .links a {
-  display: block;
+  padding: 20px;
 }
 .product-item {
   border: white solid 1px;
@@ -256,5 +260,86 @@ blockquote img {
   }
   .slideshow-item-text p {
     font-size: 13px;
+  }
+}
+
+/* Адаптив */
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    top: 38px;
+    left: 30px;
+  }
+  .menu-icon::before,
+  .menu-icon::after,
+  .menu-icon span {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000000;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+  }
+  .menu-icon::before {
+    top: 0;
+  }
+  .menu-icon::after {
+    bottom: 0;
+  }
+  .menu-icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu-icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu-icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu-icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .links {
+    position: fixed;
+    top: 0;
+    left: -130%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.966);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    overflow: auto;
+  }
+  .links._active {
+    left: 0;
+  }
+  .links div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .links a {
+    padding: 40px;
+  }
+  .logo {
+    z-index: 6;
   }
 }
