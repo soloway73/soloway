@@ -29,19 +29,8 @@ a {
 nav {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  /* color: red; */
 }
-/* ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 45px;
-    
-}
-ul li {
-    vertical-align: center;
-    width: 250px;
-} */
+
 .logo {
   margin-left: 20px;
 }
@@ -54,8 +43,6 @@ ul li {
 .links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  /* grid-template-columns: repeat(auto-fit, 100px); */
-  /* margin: auto; */
   gap: 10px;
 }
 .links div {
@@ -98,9 +85,6 @@ p {
   color: red;
 }
 footer {
-  /* position: absolute;
-    left: 0;
-    bottom: 0; */
   width: 100%;
   background-color: rgba(0, 0, 0, 0.774);
   color: white;
@@ -111,7 +95,6 @@ footer {
   padding-bottom: 20px;
 }
 #vk_groups {
-  margin-right: 50px;
 }
 .footer-contain {
   margin-left: 50px;
@@ -124,6 +107,10 @@ footer {
 .footer-contain div:not(:last-child) {
   margin-right: 20px;
 }
+.adress {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+}
 .adress p {
   text-align: right;
 }
@@ -135,9 +122,18 @@ footer {
   margin-right: auto;
   padding-bottom: 20px;
 }
-.map img {
-  max-height: 400px;
-  max-width: auto;
+.map {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.absoluted {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 blockquote {
