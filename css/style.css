@@ -58,7 +58,6 @@ nav {
 }
 a:hover {
   color: red;
-  text-transform: lowercase;
 }
 h1,
 h2 {
