@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Nunito", "sans-serif"; */
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0;
@@ -27,7 +37,8 @@ a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 22px;
+  text-align: center;
+  font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 700;
 }
 nav {
@@ -269,11 +280,14 @@ blockquote img {
 .menu-icon {
   display: none;
 }
-@media (max-width: 1290px) {
+@media (max-width: 1180px) {
   nav {
     display: flex;
     justify-content: space-between;
     margin-right: 40px;
+  }
+  nav a {
+    font-size: 25px;
   }
   .menu-icon {
     z-index: 5;
@@ -390,5 +404,93 @@ blockquote img {
   .review p {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+h1,
+h2 {
+  text-align: center;
+
+  font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+.box-container .box {
+  flex: 1 1 25rem;
+  background: #111111d0;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  color: #fff;
+  border-radius: 2.5rem;
+  position: relative;
+  cursor: pointer;
+  align-self: stretch;
+}
+.box-container .box img {
+  max-width: 100%;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.box-container .box h4 {
+  font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.box-container .box .stars {
+  color: orange;
+  padding: 1rem 0rem;
+  font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.box-container .box p {
+  text-align: justify;
+  font-size: calc(12px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+}
+.box-container .box::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    #00ffd5,
+    #45ff00,
+    #ff0,
+    #ff8800,
+    #002bff,
+    #7a00ff,
+    #00ffd5
+  );
+  z-index: -1;
+  top: -0.4rem;
+  left: -0.4rem;
+  background-size: 400%;
+  width: calc(100% + 0.8rem);
+  height: calc(100% + 0.8rem);
+  border-radius: 2.5rem;
+  filter: blur(0.3rem);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  animation: move 20s linear infinite;
+}
+.box-container .box:hover::before {
+  opacity: 1;
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
