@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   box-sizing: border-box;
   /* font-family: "Nunito", "sans-serif"; */
 }
@@ -445,15 +445,18 @@ h2 {
 
 .box-container .box h4 {
   font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0;
 }
 .box-container .box .stars {
   color: orange;
   padding: 1rem 0rem;
   font-size: calc(15px + (25 - 15) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0;
 }
 .box-container .box p {
   text-align: justify;
   font-size: calc(12px + (18 - 15) * ((100vw - 300px) / (1600 - 300)));
+  margin: 0;
 }
 .box-container .box::before {
   content: "";
