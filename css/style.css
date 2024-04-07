@@ -411,7 +411,7 @@ h1,
 h2 {
   text-align: center;
 
-  font-size: calc(25px + (50 - 25) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(25px + (35 - 25) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .box-container {
