@@ -6,7 +6,7 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -18,7 +18,7 @@ body {
 
   margin: 0;
 }
-body._lock {
+.lock {
   overflow: hidden;
 }
 header {
