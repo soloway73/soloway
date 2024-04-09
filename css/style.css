@@ -6,19 +6,19 @@
 }
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0;
 
-  background: center no-repeat url("../img/lesson.jpg");
+  background: center no-repeat url("../img/lesson.webp");
   background-size: cover;
   background-position: fixed;
 
   margin: 0;
 }
-body._lock {
+.lock {
   overflow: hidden;
 }
 header {
