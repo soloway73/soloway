@@ -21,6 +21,9 @@ body {
 .lock {
   overflow: hidden;
 }
+#vk_groups {
+  pointer-events: all;
+}
 header {
   border-bottom: 1px solid;
 }
@@ -118,7 +121,14 @@ footer {
   padding: 15px;
 }
 .adress p {
-  text-align: right;
+  text-align: center;
+  pointer-events: all;
+  white-space: nowrap;
+}
+.adress a {
+  color: white;
+  text-transform: lowercase;
+  text-decoration: underline;
 }
 .video-guitar {
   display: flex;
