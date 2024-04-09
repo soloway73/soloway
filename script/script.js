@@ -156,3 +156,16 @@ while (i < 3) {
   renderReview(i);
   i++;
 }
+
+// Кнопка вверх
+
+let upButton = document.querySelector(".to-up");
+window.onscroll = scroller;
+function scroller() {
+  if (window.scrollY > 50) {
+    upButton.classList.remove("hidden");
+  }
+  if (window.scrollY == 0) {
+    upButton.classList.add("hidden");
+  }
+}
