@@ -124,6 +124,7 @@ footer {
   text-align: center;
   pointer-events: all;
   white-space: nowrap;
+  font-size: calc(15px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 .adress a {
   color: white;
