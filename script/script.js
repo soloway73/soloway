@@ -119,8 +119,6 @@ let threeReviews = allReviews;
 
 while (threeReviews.length > 3) {
   let randomIndex = Math.round(Math.random() * threeReviews.length);
-  console.log(randomIndex);
-
   threeReviews.splice(randomIndex, 1);
 }
 

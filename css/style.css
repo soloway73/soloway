@@ -24,6 +24,8 @@ body {
 header {
   border-bottom: 1px solid;
 }
+#vk_groups {
+}
 .container {
   max-width: 1320px;
   margin-left: auto;
@@ -138,6 +140,7 @@ footer {
   position: absolute;
   top: 40px;
   display: flex;
+  align-items: stretch;
   justify-content: space-between;
   width: 80%;
   pointer-events: none;
