@@ -1,239 +1,222 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Уроки гитары SOLOWAY</title>
-    <meta
-      name="description"
-      content="Научитесь играть на гитаре и петь в студии SOLOWAY. Получите базовые навыки и научитесь исполнять любую музыку под собственный аккомпанемент."
-    />
-    <meta
-      name="keywords"
-      content="уроки гитары Ульяновск, уроки гитары в Ульяновске, уроки вокала в Ульяновске, уроки гитары,гитара,обучение игре на гитаре,уроки музыки,музыкальные инструменты,гитара,уроки игры на гитаре, бой, пребор, аккорды, песни под гитару, классичекая гитара, акустическая гитара"
-    />
-    <meta property="og:title" content="Уроки гитары SOLOWAY" />
-    <meta
-      property="og:description"
-      content="Научитесь играть на гитаре и петь в студии SOLOWAY. Получите базовые навыки и научитесь исполнять любую музыку под собственный аккомпанемент."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://soloway-studio.ru/" />
-    <meta
-      property="og:image"
-      content="https://soloway-studio.ru/img/lesson.jpg"
-    />
-    <link rel="icon" href="img/favikon.png" type="image/x-icon" />
-    <link href="css/style.css" rel="stylesheet" />
-    <script
-      src="https://vk.com/js/api/openapi.js?169"
-      type="text/javascript"
-    ></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>SOLOWAY</title>
   </head>
   <body>
-    <script type="text/javascript">
-      VK.init({
-        apiId:
-          vk1.a
-            .DO_JNM598519hym6YFfa8JMwa9gji7IM5gKgbKNaY0TD3YWOcIULwJKeCw6PJO2xoCKvNxvk1YlPdwOdSJq2G5DnJGBJ9i7PnRb13QTJsK_EpN9xK61Qpa -
-          GBO6ZKlKxguBWx_enTJhkKhBxAgytMQyCXAL8BKXSY_TUGtxWEyEri3zJkIS8qJ082K_4464bUJqecai5xEvI50JbpcczNQ,
-        onlyWidgets: true,
-      });
-    </script>
-    <header class="main-header whited">
-      <!-- Шапка сайта -->
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <a href="index.html"
-              ><img
-                src="img/logo.png"
-                width="80"
-                height="90"
-                alt="Логотип SOLOWAY"
-                loading="lazy"
-            /></a>
+    
+      <header>
+        <nav class="main-nav links">
+          <div class="firstBlock">
+            <ul class="navigation">
+              <li><a href="#" class="aboutBtn">О студии</a></li>
+              <li><a href='https://yandex.ru/business/widget/request/company/70263099072'>Запись на урок</a></li>
+              <li><a href="https://www.tinkoff.ru/rm/khisyametdinov.ilyas1/7q3kb53543">Оплатить</a></li>
+              <li><a href="#" class="contactsBtn">Контакты</a></li>
+            </ul>
+  
+            <ul class="socials">
+              <li class="tg">
+                <a href="https://t.me/ilyas_soloway"
+                  ><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM10.7144 14.5343C9.11157 15.2341 7.46472 15.9532 5.95883 16.7826L5.95873 16.7828C5.17241 17.3585 6.21758 17.7657 7.19803 18.1476C7.35391 18.2084 7.50814 18.2685 7.65313 18.3285C7.77377 18.3656 7.89647 18.4047 8.02079 18.4443C9.11124 18.7917 10.3272 19.1791 11.3858 18.5963C13.1248 17.5973 14.766 16.4424 16.4059 15.2883C16.9432 14.9102 17.4803 14.5322 18.0207 14.1598C18.046 14.1436 18.0746 14.1251 18.1058 14.1048C18.5662 13.8064 19.6016 13.1353 19.2186 14.06C18.313 15.0504 17.3429 15.9272 16.3676 16.8087C15.7103 17.4027 15.0506 17.999 14.4066 18.6336C13.8457 19.0894 13.2633 20.0059 13.8914 20.644C15.3379 21.6567 16.8071 22.6449 18.2755 23.6325C18.7533 23.9538 19.231 24.2752 19.7079 24.5972C20.516 25.2425 21.779 24.7206 21.9567 23.7123C22.0357 23.2485 22.115 22.7847 22.1944 22.3208C22.6328 19.7578 23.0713 17.1938 23.4587 14.6223C23.5113 14.219 23.571 13.8156 23.6307 13.4121C23.7755 12.434 23.9204 11.4547 23.9656 10.4714C23.849 9.49009 22.6592 9.70585 21.997 9.9265C18.5935 11.2216 15.224 12.6126 11.8679 14.0282C11.4877 14.1967 11.1023 14.3649 10.7144 14.5343Z" fill="white"/>
+</svg></a>
+              </li>
+              <li class="wa">
+                <a href="https://wa.me/79176037035?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%F0%9F%91%8B%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D1%8E%D1%82%20%D1%83%D1%80%D0%BE%D0%BA%D0%B8%20%D0%B3%D0%B8%D1%82%D0%B0%D1%80%D1%8B!%20"
+                  ><svg width="32px" height="32px" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+    <g>
+       
+        <path fill="white" fill-rule="nonzero" d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z"/>
+    </g>
+</svg></a>
+              </li>
+              <li class="vk">
+                <a href="https://vk.com/solowaystudio"
+                  ><svg fill="white" width="32px" height="32px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 .4C4.698.4.4 4.698.4 10s4.298 9.6 9.6 9.6 9.6-4.298 9.6-9.6S15.302.4 10 .4zm3.692 10.831s.849.838 1.058 1.227c.006.008.009.016.011.02.085.143.105.254.063.337-.07.138-.31.206-.392.212h-1.5c-.104 0-.322-.027-.586-.209-.203-.142-.403-.375-.598-.602-.291-.338-.543-.63-.797-.63a.305.305 0 0 0-.095.015c-.192.062-.438.336-.438 1.066 0 .228-.18.359-.307.359h-.687c-.234 0-1.453-.082-2.533-1.221-1.322-1.395-2.512-4.193-2.522-4.219-.075-.181.08-.278.249-.278h1.515c.202 0 .268.123.314.232.054.127.252.632.577 1.2.527.926.85 1.302 1.109 1.302a.3.3 0 0 0 .139-.036c.338-.188.275-1.393.26-1.643 0-.047-.001-.539-.174-.775-.124-.171-.335-.236-.463-.26a.55.55 0 0 1 .199-.169c.232-.116.65-.133 1.065-.133h.231c.45.006.566.035.729.076.33.079.337.292.308 1.021-.009.207-.018.441-.018.717 0 .06-.003.124-.003.192-.01.371-.022.792.24.965a.216.216 0 0 0 .114.033c.091 0 .365 0 1.107-1.273a9.718 9.718 0 0 0 .595-1.274c.015-.026.059-.106.111-.137a.266.266 0 0 1 .124-.029h1.781c.194 0 .327.029.352.104.044.119-.008.482-.821 1.583l-.363.479c-.737.966-.737 1.015.046 1.748z"/></svg></a>
+              </li>
+              <li class="discord">
+                <a href="https://discord.gg/tBRacv9p"
+                  ><svg width="32px" height="32px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+   <circle cx="512" cy="512" r="512" fill="white"/>
+   <path d="M689.43 349a422.21 422.21 0 0 0-104.22-32.32 1.58 1.58 0 0 0-1.68.79 294.11 294.11 0 0 0-13 26.66 389.78 389.78 0 0 0-117.05 0 269.75 269.75 0 0 0-13.18-26.66 1.64 1.64 0 0 0-1.68-.79A421 421 0 0 0 334.44 349a1.49 1.49 0 0 0-.69.59c-66.37 99.17-84.55 195.9-75.63 291.41a1.76 1.76 0 0 0 .67 1.2 424.58 424.58 0 0 0 127.85 64.63 1.66 1.66 0 0 0 1.8-.59 303.45 303.45 0 0 0 26.15-42.54 1.62 1.62 0 0 0-.89-2.25 279.6 279.6 0 0 1-39.94-19 1.64 1.64 0 0 1-.16-2.72c2.68-2 5.37-4.1 7.93-6.22a1.58 1.58 0 0 1 1.65-.22c83.79 38.26 174.51 38.26 257.31 0a1.58 1.58 0 0 1 1.68.2c2.56 2.11 5.25 4.23 8 6.24a1.64 1.64 0 0 1-.14 2.72 262.37 262.37 0 0 1-40 19 1.63 1.63 0 0 0-.87 2.28 340.72 340.72 0 0 0 26.13 42.52 1.62 1.62 0 0 0 1.8.61 423.17 423.17 0 0 0 128-64.63 1.64 1.64 0 0 0 .67-1.18c10.68-110.44-17.88-206.38-75.7-291.42a1.3 1.3 0 0 0-.63-.63zM427.09 582.85c-25.23 0-46-23.16-46-51.6s20.38-51.6 46-51.6c25.83 0 46.42 23.36 46 51.6.02 28.44-20.37 51.6-46 51.6zm170.13 0c-25.23 0-46-23.16-46-51.6s20.38-51.6 46-51.6c25.83 0 46.42 23.36 46 51.6.01 28.44-20.17 51.6-46 51.6z" style="fill: black"/>
+</svg></a>
+              </li>
+            </ul>
+            <div class="language">Eng</div>
           </div>
-
-          <div class="links">
-            <div>
-              <a class="menu-link" data-goto=".about" href="#">О студии</a>
-            </div>
-            <div>
-              <a
-                class="menu-link"
-                href="https://yandex.ru/business/widget/request/company/70263099072"
-                >Запись на урок</a
-              >
-            </div>
-
-            <div>
-              <a
-                class="menu-link"
-                href="https://www.tinkoff.ru/rm/khisyametdinov.ilyas1/7q3kb53543"
-                >Оплатить</a
-              >
-            </div>
-            <div>
-              <a class="menu-link" data-goto=".adress" href="#">Контакты</a>
-            </div>
-            <div class="phone">
-              <a href="tel:+78422335673">+7 (8422) 33-56-73</a>
-            </div>
-          </div>
-
-          <div class="menu-icon">
-            <span></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="whited">
-      <!-- Основное содержимое страницы -->
-      <div class="container">
-        <div class="hero">
-          <h1>Уроки гитары<br />Уютная студия в центре Ульяновска</h1>
-          <p>
-            То, что нужно, чтобы начать музыцировать спустя лишь пару месяцев
-            занятий!
-          </p>
-        </div>
-        <section class="products">
-          <div class="slideshow">
-            <div class="slideshow-item">
-              <img src="img/photo-1.jpg" alt="Ильяс в дверях" loading="lazy" />
-              <div class="slideshow-item-text">
-                <h5>Ильяс Равильевич</h5>
-                <p>преподаватель</p>
-              </div>
-            </div>
-            <div class="slideshow-item">
-              <img
-                src="img/photo-2.jpg"
-                alt="гитариски играют"
-                loading="lazy"
-              />
-              <div class="slideshow-item-text">
-                <h5>Довольные ученики</h5>
-                <p>Фото с квартирника</p>
-              </div>
-            </div>
-            <div class="slideshow-item">
-              <img
-                src="img/photo-3.jpg"
-                alt="девушка с гитарой на сцене"
-                loading="lazy"
-              />
-              <div class="slideshow-item-text">
-                <h5>Научись петь и играть</h5>
-                <p>Всего за несколько месяцев</p>
-              </div>
-            </div>
-            <div class="slideshow-item">
-              <img src="img/photo-4.jpg" alt="гитары на стене" loading="lazy" />
-              <div class="slideshow-item-text">
-                <h5>Готов потрудиться?</h5>
-                <p>Уроки гитары и вокала ждут тебя</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id="about" class="about">
-          <h2>О студии</h2>
-          <p>
-            Студия открыта летом 2018 года и существует по сей день. В её двери
-            вошло уже не менее 1000 учеников.
-            <br />
-            SOLOWAY - это уникальное пространство, где каждый желающий может
-            открыть для себя мир музыки и научиться играть на любимом
-            инструменте. Наша школа предлагает разнообразные программы обучения
-            для людей всех возрастов, начиная от основ музыкального искусства.
-            Преподаватель Ильяс Равильевич, выпускник Ульяновского Музыкального
-            Училища и Астраханской Государственной Консерватории, будет
-            сопровождать Вас в обучении. Проводятся только индивидуальные
-            занятия игры на гитаре, а также уроки вокала и теории музыки.
-            Приходите в нашу школу музыки и откройте для себя удивительный мир
-            музыкальных возможностей! SOLOWAY – место, где ваши таланты зазвучат
-            в полную силу!
-            <br />
-            Записаться на урок вы можете по телефону
-            <a href="tel:+78422335673">+7 (8422) 33-56-73</a>
-          </p>
-        </section>
-        <section id="reviews">
-          <h2>Отзывы</h2>
-          <div class="box-container"></div>
-
-          <p>
-            Больше отзывов о нашей работе вы можете прочитать
-            <a href="https://vk.com/topic-151194880_36436578">ЗДЕСЬ</a> <br />
-          </p>
-        </section>
-
-        <section class="gallery">
-          <div class="video-guitar">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/lBq7e6TX9pA?si=YoNk9SBN8X_j-3FK"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-      </div>
-
-      <script
-        type="text/javascript"
-        src="https://vk.com/js/api/openapi.js?168"
-      ></script>
-      <script type="text/javascript">
-        VK.Widgets.Group(
-          "vk_groups",
-          {
-            mode: 4,
-            no_cover: 1,
-            wide: 1,
-            height: 400,
-            color1: "FFFFFF",
-            color2: "000000",
-            color3: "5181B8",
-          },
-          151194880
-        );
-      </script>
-    </main>
-    <footer class="main-footer">
-      <!-- Подвал сайта c адресом, картой и группой вк-->
-      <div class="map">
+        <div class="secondNavBlock"></div>
+          </nav>
+      </header>
+      <main>
+<div class="about"><div>
+  <h2>О студии</h2>
+  <p>
+    Студия открыта летом 2018 года и существует по сей день. В её двери вошло уже не менее 1000 учеников.
+    SOLOWAY - это уникальное пространство, где каждый желающий может открыть для себя мир музыки и научиться играть на любимом инструменте. Наша школа предлагает разнообразные программы обучения для людей всех возрастов, начиная от основ музыкального искусства. Преподаватель Ильяс Равильевич, выпускник Ульяновского Музыкального Училища и Астраханской Государственной Консерватории, будет сопровождать Вас в обучении. Проводятся только индивидуальные занятия игры на гитаре, а также уроки вокала и теории музыки. Приходите в нашу школу музыки и откройте для себя удивительный мир музыкальных возможностей! SOLOWAY – место, где ваши таланты зазвучат в полную силу!
+    
+    <br><br>У нас в студии переобуваются, поэтому не забудьте взять с собой чистую обувь. При отсутствии сменной обуви, вы можете воспользоваться общими тапочками.
+    <br><br>Записаться на урок вы можете по телефону +7 (8422) 33-56-73
+  </p>
+  <img src="img/photo_teacher.jpg">
+  <button type="button" class="closeAbout">Закрыть</button>
+</div></div>
+<div class="contacts"><div>
+  <h2>Контакты</h2>
+  <p>
+    <b>Адрес:</b> Ул. К. Маркса, д. 26<br>
+Вход справа от почты.<br><br>
+<b>Режим работы:</b>
+только по
+предварительной записи<br><br>
+<b>Телефон:</b> 33-56-73
+<br><br>
+<b>email:</b> solowaystudio@gmail.com
+<br><br>
+У нас переобуваются,
+поэтому необходимо иметь
+с собой вторую обувь.
+При отсутствии чистой обуви,
+можем выдать общие тапочки.
+  </p>
+        <div class="map">
         <script
           type="text/javascript"
           charset="utf-8"
           async
           src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A408c09544327403291aa8f6e9c18ef7d96a62be638e7fb55b57b5daeaa404ac0&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
-        ></script>
-        <div class="container absoluted">
-          <div class="adress" id="links">
-            <p>
-              Ул. К. Маркса, д. 26<br />
-              Вход справа от почты.<br />
-              Режим работы:<br />
-              <b>только по <br />предварительной записи</b><br />
-              тел. 33-56-73
-            </p>
-            <p>
-              У нас переобуваются, <br />поэтому необходимо иметь <br />с собой
-              вторую обувь. <br />При отсутствии чистой обуви, <br />можем
-              выдать общие тапочки :)
-            </p>
-          </div>
+        ></script></div>
+  <button type="button" class="closeContacts">Закрыть</button>
+</div></div>
+<div class="mobile">
+            <div class="container">
+              <div class="menu-icon">
+                <span></span>
+              </div>
+              <div class="main-title">
+                <h1>SOLOWAY</h1>
+                <div class="geo2">
+                  <img src="img/geotag.svg" alt="geotag" />
+                  <a class="city">Ульяновск</a>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar"></div>
+            <div class="main-left">
+              <div class="geo">
+                <img src="img/geotag.svg" alt="geotag" />
+                <a class="city">Ульяновск</a>
+              </div>
+              <div class="main-container">
+                <h2>Студия <br /><span>SOLOWAY</span></h2>
+                <p>Уроки гитары для тебя</p>
+              </div>
+              <button type="button" class="button order" value="Записаться" onclick="window.location='https://yandex.ru/business/widget/request/company/70263099072'">Записаться</button>
+            </div>
+          
+</div>
+<div class="desktop">
+            
+              <div class="sidebar">
+                <div class="menu-icon"><span></span></div>
+                <div class="language2">Eng</div>
+              </div>
+              <div class="container">
+              <div class="main-title">
+                <h1>SOLOWAY</h1>
+                <div class="geo2">
+                  <img src="img/geotag.svg" alt="geotag" />
+                  <a class="city">Ульяновск</a>
+                </div>
+              </div>
+            
+            <div class="main-left">
+              <div class="geo">
+                <img src="img/geotag.svg" alt="geotag" />
+                <a class="city">Ульяновск</a>
+              </div>
+              <div class="main-container">
+                <h2>Студия <br /><span>SOLOWAY</span></h2>
+                <p>Уроки гитары для тебя</p>
+              </div>
+              <button type="button" class="button order" value="Записаться" onclick="window.location='https://yandex.ru/business/widget/request/company/70263099072'">Записаться</button>
+              </div>
+              <footer>
+                <div class="main-footer desktop">
+                  
+                  <a href="tel:+7(8422)33-56-73" class="tel">8 (8422) 33-56-73</a>
+                  <p class="copyright">Студия SOLOWAY. ул К.Маркса, д.26</p>
+                </div>
+              </footer>
+            </div> 
+            
+              
+              <div class="slider">  
+                 <button class="left-button"><img src="img/arrow.svg" alt="влево"></button>
+                 <button class="right-button"><img src="img/arrow.svg" alt="вправо"></button>
+                 <div class="dots">
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                 </div>
+           <div class="slider-contain">
+                   <div class="slide slide0">
+                  <div class="slide-content"><h2>Ильяс Равильевич</h2>
+                  <p>
+                    Преподаватель гитары, основатель студии, выпускник Ульяновского Музыкалього Училища и Астраханской Государственной Консерватории
+                  </p>
+                  </div>
+                  </div>
+                  <div class="slide slide1">
+                    <div class="slide-content"><h2>Отзывы</h2>
+                      <p>
+                        Впечатления наших учеников от посещений студии SOLOWAY
+                      </p>
+                      <button type="button" class="button more" value="Перейти" onclick="window.location='https://vk.com/topic-151194880_36436578'">Читать</button>
+                    </div>
+                  </div>
+                                    <div class="slide slide2">
+                    <div class="slide-content"><h2>Инструменты уже есть</h2>
+                      <p>
+                        Тебе не нужна собственная гитара, чтобы прийти на первый урок и попробовать!
+                      </p>
+                      <button type="button" class="button more" value="Перейти" onclick="window.location='https://vk.com/topic-151194880_36436578'">Запишись и попробуй!</button>
+                    </div>
+                  </div>
+                 <div class="slide slide3">
+                    <div class="slide-content"><h2>Контакты</h2>
+                      <p>
+                        Студия находится по адресу ул. К.Маркса д.26, <br> тел. 33-56-73 <br> solowaystudio@gmail.com
+                      </p>
+                      <button type="button" class="button more" value="Открыть на карте" onclick="window.location='https://yandex.ru/maps/?from=mapframe&ll=48.388352%2C54.321479&source=mapframe&um=constructor%3A408c09544327403291aa8f6e9c18ef7d96a62be638e7fb55b57b5daeaa404ac0&utm_source=mapframe&z=17.2'">
+                        Открыть на карте</button>
+                    </div>
+                  </div>
+           </div>
+    </div>
 
-          <div id="vk_groups"></div>
+              
+              
+  </div>
+      </main>
+      <footer class="mobile">
+        <div class="main-footer">
+          <div class="language2">Eng</div>
+          <a href="tel:+78422335673" class="tel">8 (8422) 33-56-73</a>
+          <p class="copyright">Студия SOLOWAY. ул К.Маркса, д.26</p>
         </div>
-      </div>
-    </footer>
-    <script src="script/script.js" type="text/javascript"></script>
+      </footer>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
   </body>
 </html>
